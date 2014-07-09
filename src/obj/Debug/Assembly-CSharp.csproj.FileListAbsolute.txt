@@ -1,0 +1,11 @@
+G:\github\taitan\src\Temp\bin\Debug\Assembly-CSharp.dll
+G:\github\taitan\src\Temp\bin\Debug\Assembly-CSharp.pdb
+G:\github\taitan\src\Temp\bin\Debug\UnityEditor.dll
+G:\github\taitan\src\Temp\bin\Debug\UnityEngine.dll
+G:\github\taitan\src\Temp\bin\Debug\Mono.Cecil.dll
+G:\github\taitan\src\Temp\bin\Debug\nunit.framework.dll
+G:\github\taitan\src\Temp\bin\Debug\Unity.DataContract.dll
+G:\github\taitan\src\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+G:\github\taitan\src\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+G:\github\taitan\src\obj\Debug\Assembly-CSharp.dll
+G:\github\taitan\src\obj\Debug\Assembly-CSharp.pdb
