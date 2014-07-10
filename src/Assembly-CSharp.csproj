@@ -49,6 +49,7 @@
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\SortingLayerExposed.cs" />
      <Compile Include="Assets\scripts\ArrowController.cs" />
      <Compile Include="Assets\scripts\BadgerController.cs" />
+     <Compile Include="Assets\scripts\ShootWall.cs" />
      <Compile Include="Assets\scripts\Spawner.cs" />
      <Compile Include="Assets\scripts\bunnyController.cs" />
      <None Include="Assets\Tiled2Unity\Prefabs\_ReadMe.txt" />

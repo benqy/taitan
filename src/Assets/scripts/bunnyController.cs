@@ -39,7 +39,7 @@ public class bunnyController : MonoBehaviour {
 
 
     void FixedUpdate() {
-        if (Input.GetMouseButtonDown(0)) {
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)) {
             int ammoIndex = 0;
             GameObject bullet = (GameObject)Instantiate(ammo[ammoIndex], new Vector3(transform.position.x,transform.position.y,0), transform.rotation);
             var speed = moveDirection * bulletSpeed;

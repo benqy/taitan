@@ -1,0 +1,2 @@
+2014/07/10 21:38:53 ***** LOG FILE OPENING *****
+2014/07/10 21:38:57 220444607 14b [INFO Client 5316] Send protocol version

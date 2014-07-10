@@ -10,11 +10,19 @@ public class ArrowController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.Log(transform.position.x);
-        if (transform.position.x > 50 || transform.position.x < -50 || transform.position.y > 50 || transform.position.y < -50)
+        if (transform.position.x > 5 || transform.position.x < -5 || transform.position.y > 5 || transform.position.y < -5)
         {
             Destroy(gameObject);
         }
 	}
 
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.tag == "Wall")
+        {
+            //audio.Play();
+            //Debug.Log(audio);
+            Destroy(gameObject);
+        };
+    }
 }

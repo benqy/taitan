@@ -8,7 +8,6 @@ public class Spawner : MonoBehaviour {
     private float spawnDelay = 1f;
     public GameObject[] badgers;
 
-    private int badgerIndex = 0;
     private GameObject begin;
 
     void Start() {
@@ -19,7 +18,7 @@ public class Spawner : MonoBehaviour {
 
     void Spawn() {
        // if (badgerIndex < badgers.Length) {
-            GameObject badger = (GameObject)Instantiate(badgers[0],begin.transform.position,begin.transform.rotation);
+            Instantiate(badgers[0],begin.transform.position,begin.transform.rotation);
             //badger.transform.Rotate(0, 0, 90f);
             //badgerIndex++;
        // }
