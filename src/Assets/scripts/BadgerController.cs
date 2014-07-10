@@ -32,8 +32,10 @@ public class BadgerController : MonoBehaviour {
         float targetAngle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 180;
 
         //transform.rotation =Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 0, targetAngle), 5 * Time.deltaTime);
-        transform.rotation = Quaternion.Euler(0, 0, targetAngle);
+        //transform.rotation = Quaternion.Euler(0, 0, targetAngle);
         //transform.LookAt(new Vector3(0,0,nextPoint.transform.position.y));
+
+        transform.rotation =Quaternion.Slerp(transform.rotation,Quaternion.Euler(0, 0, targetAngle),15* Time.deltaTime);
         
         //monster.SetDestination(target.transform.position);     
     }
