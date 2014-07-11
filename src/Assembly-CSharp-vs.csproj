@@ -39,16 +39,18 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>D:/soft/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>E:/soft/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>D:/soft/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>E:/soft/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\SortingLayerExposed.cs" />
      <Compile Include="Assets\scripts\ArrowController.cs" />
      <Compile Include="Assets\scripts\BadgerController.cs" />
+     <Compile Include="Assets\scripts\Events\EventBase.cs" />
+     <Compile Include="Assets\scripts\Events\EventService.cs" />
      <Compile Include="Assets\scripts\ShootWall.cs" />
      <Compile Include="Assets\scripts\Spawner.cs" />
      <Compile Include="Assets\scripts\bunnyController.cs" />

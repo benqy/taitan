@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BadgerController : MonoBehaviour
-{
-    public float moveSpeed = .1f;
-
+public class BadgerController : MonoBehaviour {
+    #region 可配置参数
+    private float moveSpeed = 2f;
+    private float m_life = 15;
+    private int m_attack = 20;
+    #endregion
     public GameObject[] points;
 
     private int currentIndex = 0;
@@ -55,12 +57,18 @@ public class BadgerController : MonoBehaviour
         {
             Destroy(col.gameObject);
             audio.Play();
-            dead = true;
-            Invoke("DestoryO", audio.clip.length);
+            m_life =m_life -  bunnyController.m_attack;
+            if (m_life <= 0) {
+                dead = true;
+                Invoke("DestoryO", audio.clip.length);
+            }
         }
         else if (col.tag == "End")
         {
-            // DestroyObject(GameObject.Find("bunny_1"));
+            bunnyController.m_maxLife -= m_attack;
+            if (bunnyController.m_maxLife <= 0) {
+                DestroyObject(GameObject.Find("bunny_1"));
+            }
             Destroy(gameObject);
         }
         else if (col.tag == "Point")
